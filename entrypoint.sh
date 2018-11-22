@@ -24,7 +24,7 @@ do
     new_commit=$(ref)
 
     if ! [ "$commit" = "$new_commit" ]; then
-        hugo -w -d /output
+        hugo -d /output
         commit=$new_commit
     fi
 
