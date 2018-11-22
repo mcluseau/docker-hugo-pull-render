@@ -9,7 +9,7 @@ volume "/git"
 volume "/output"
 
 run apk add --update git
-copy --from=build /go/bin/* /bin/*
+copy --from=build /go/bin/* /bin/
 
 entrypoint ["/entrypoint.sh"]
 add entrypoint.sh /
